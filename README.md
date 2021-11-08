@@ -20,7 +20,7 @@ This test aim to show us your skills in the following technologies (Javascript(e
   - handle loading and error state
   - the page should only exposed to authenticated users
 
-to better understand the required functionality see the final version <a href="https://test-technique-a1f72.firebaseapp.com">here</a> or go to images folder
+to better understand the required functionality see the final version <a href="https://test-technique-a1f72.firebaseapp.com">here</a> or go to images folder above ⬆
 
 <h2>Note</h2>
 
