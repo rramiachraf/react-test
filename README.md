@@ -24,4 +24,4 @@ to better understand the required functionality see the final version in images 
 
 <h2>Note</h2>
 
-after finishing push the test to public github repository and send the link to this <b>test@test.com</b> under subject name <<Technical test>>
+after finishing push the test to public github repository and send the link to this <b>talents@wingstechnologies.ma</b> under subject name <<Technical test>>
