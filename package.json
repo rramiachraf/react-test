@@ -1,0 +1,23 @@
+{
+	"name": "react-test",
+	"version": "0.1.0",
+	"repository": "git@github.com:ilyasssan2/react-test.git",
+	"author": "Achraf RRAMI",
+	"license": "MIT",
+	"dependencies": {
+		"@fontsource/poppins": "^4.5.10",
+		"formik": "^2.2.9",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.4.3",
+		"yup": "^0.32.11"
+	},
+	"devDependencies": {
+		"@parcel/transformer-stylus": "2.0.0-rc.0",
+		"parcel": "^2.0.0-rc.0"
+	},
+	"scripts": {
+		"start": "parcel src/index.html --no-cache --open --port 3000",
+		"build": "parcel build src/index.html"
+	}
+}

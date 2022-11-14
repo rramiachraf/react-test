@@ -1,0 +1,132 @@
+main-color = #fe5454
+default-shadow = 0 6px 3px #f2f2f2
+
+*
+	margin 0
+	padding 0
+
+html
+	font-size 62.5%
+
+body
+	font-family poppins, sans-serif
+	background-color #f7f7f7
+
+a
+	text-decoration none
+
+nav
+	display flex
+	justify-content space-between
+	align-items center
+	box-shadow default-shadow
+	#logo
+		font-size 2rem
+		color #000
+	#menu
+		display flex
+		gap 3rem
+		align-items center
+	li
+		color main-color
+		font-size 1.6rem
+		list-style none
+		font-weight 500
+
+input
+	border-radius 12px
+	font-family inherit
+	background-color #f7f7f7
+	color #171717
+	padding 1.5rem 2rem
+	font-size 1.4rem
+	border 1px solid #dee8ec
+
+button
+	background-color main-color
+	color white
+	border none
+	border-radius 12px
+	font-family inherit
+	padding 1rem 3rem
+	cursor pointer
+	font-weight 500
+	font-size 1.7rem
+	transition 0.3s background-color ease
+	&:hover
+		background-color darken(main-color, 10%)
+
+.container
+	padding 2rem 10rem
+
+#title
+	font-size 3rem
+
+.page
+	min-height 100vh
+	display grid
+	grid-template-rows auto 1fr
+
+#login
+	display flex
+	align-items center
+	justify-content center
+
+#login-form
+	width 40rem
+	display flex
+	flex-direction column
+	gap 2rem
+	background-color white
+	border-radius 12px
+	padding 4rem 5rem
+	box-sizing border-box
+	box-shadow default-shadow
+	h1
+		font-size 2.5rem
+		color black
+	label
+		color black
+		font-size 1.4rem
+		text-transform capitalize
+	.section
+		display flex
+		flex-direction column
+		gap 0.5rem
+
+.bold
+	font-weight 700
+
+#articles
+	display grid
+	grid-template-columns repeat(3, 1fr)
+	gap 3rem
+	margin 2rem 0
+
+#article-card
+	display flex
+	flex-direction column
+	gap 1rem
+	background-color white
+	padding 2rem
+	border-radius 12px
+	box-shadow default-shadow
+	h1
+		font-size 1.8rem
+	p
+		font-size 1.4rem
+		color #5a5a5a
+
+#notice
+	display flex
+	justify-content center
+	align-items center
+	h1
+		font-size 2rem
+		font-weight 500
+		color #171717
+
+#error-msg
+	text-align center
+	font-size 1.2rem
+	color #c42a2a
