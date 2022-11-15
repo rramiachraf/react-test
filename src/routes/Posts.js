@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from 'react'
-import {useNavigate} from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 import { AuthContext } from '../contexts/auth'
 
 export function Posts() {
@@ -7,7 +7,6 @@ export function Posts() {
 	const [loading, setLoading] = useState(true)
 	const [error, setError] = useState(false)
 	const [logged] = useContext(AuthContext)
-	const navigate = useNavigate()
 
 	useEffect(() => {
 		const url = 'https://jsonplaceholder.typicode.com/posts'
@@ -24,8 +23,8 @@ export function Posts() {
 			})
 	}, [])
 
-	if (!logged) {
-		navigate("/login")
+	if (logged === false) {
+		return <Navigate to="/login" replace />
 	}
 
 	if (error) {
@@ -36,7 +35,7 @@ export function Posts() {
 		)
 	}
 
-	if (loading) {
+	if (loading || logged === null) {
 		return (
 			<div id="notice">
 				<h1>Loading...</h1>
