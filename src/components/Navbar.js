@@ -25,11 +25,11 @@ export function Navbar() {
 						<Link to="/posts">
 							<li>Posts</li>
 						</Link>
-						<button onClick={logout}>Logout</button>
+						<button className="btn-resize" onClick={logout}>Logout</button>
 					</>
 				) : (
 					<Link to="/login">
-						<button>Login</button>
+						<button className="btn-resize">Login</button>
 					</Link>
 				)}
 			</ul>

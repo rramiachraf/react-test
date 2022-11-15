@@ -27,11 +27,15 @@ nav
 		display flex
 		gap 3rem
 		align-items center
+		@media screen and (max-width: 500px)
+			gap 1rem
 	li
 		color main-color
 		font-size 1.6rem
 		list-style none
 		font-weight 500
+		@media screen and (max-width: 500px)
+			font-size 1.5rem
 
 input
 	border-radius 12px
@@ -55,14 +59,21 @@ button
 	transition 0.3s background-color ease
 	&:hover
 		background-color darken(main-color, 10%)
+		
+.btn-resize 
+	@media screen and (max-width: 650px)
+		padding 0.5rem 2rem
 
 .container
 	padding 2rem 10rem
 	@media screen and (max-width: 650px)
-		padding: 1rem 2rem
+		padding 1rem 2rem
 
 #title
 	font-size 3rem
+	@media screen and (max-width: 850px)
+		text-align center
+		font-size 2.5rem
 
 .page
 	min-height 100vh
@@ -84,6 +95,7 @@ button
 	padding 4rem 5rem
 	box-sizing border-box
 	box-shadow default-shadow
+	border 1px solid #eee
 	@media screen and (max-width: 650px)
 		width 30rem
 		padding 4rem 3rem
@@ -110,6 +122,7 @@ button
 	@media screen and (max-width: 850px)
 		display flex
 		flex-direction column
+		flex-wrap wrap
 
 #article-card
 	display flex
@@ -119,6 +132,7 @@ button
 	padding 2rem
 	border-radius 12px
 	box-shadow default-shadow
+	border 1px solid #eee
 	h1
 		font-size 1.8rem
 	p
