@@ -1,27 +1,27 @@
 # Technical test
 
-This test aim to show us your skills in the following technologies (Javascript(es6), Css and React js)
+## Usage
 
-<h2>Use the following techs to achieve final result</h2>
+```bash
+git clone https://github.com/rramiachraf/react-test
+cd react-test
+yarn install
+yarn start
+```
 
-- React hooks
-- Routing system (react-router-dom)
-- form handling & validation (formik or react-hook-form)
-- authentication system (context api)
+## Answers for Questions.txt
 
-<h2>Pages</h2>
+#### What is the difference between functional components and class components?
+After the introduction of react hooks, functional components are now pretty much the golden standard for creating components, they are easier to read, test and debug.
 
-- Home
-- Login
-  - form contains email, password field and button onClick on it validate the form and store the fields in <b>localstorage api</b>
-- Posts
-  - use this <a href="https://jsonplaceholder.typicode.com/posts">api</a> to fetch data
-  - display the data as cards
-  - handle loading and error state
-  - the page should only exposed to authenticated users
+#### Rules of hooks:
+Hooks must be called only from function components or custom hooks.
 
-to better understand the required functionality see the final version in images folder above ⬆
+#### How useEffect work?
+useEffect is a built-in React hook that let's you work with components side effects similar to `componentDidMount` and other methods without the need to use class components.
 
-<h2>Note</h2>
+#### Why state and not common variable?
+Because when the states changes React re-renders the view vs using common variables which you'll have to re-render the view when the data changes manually.
 
-after finishing push the test to public github repository and send the link to this <b>talents@wingstechnologies.ma</b> under subject name <<Technical test>>
+#### What are props?
+Props is a way for React apps to pass data from parents to children components.
