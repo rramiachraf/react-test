@@ -58,6 +58,8 @@ button
 
 .container
 	padding 2rem 10rem
+	@media screen and (max-width: 650px)
+		padding: 1rem 2rem
 
 #title
 	font-size 3rem
@@ -82,6 +84,9 @@ button
 	padding 4rem 5rem
 	box-sizing border-box
 	box-shadow default-shadow
+	@media screen and (max-width: 650px)
+		width 30rem
+		padding 4rem 3rem
 	h1
 		font-size 2.5rem
 		color black
@@ -102,6 +107,9 @@ button
 	grid-template-columns repeat(3, 1fr)
 	gap 3rem
 	margin 2rem 0
+	@media screen and (max-width: 850px)
+		display flex
+		flex-direction column
 
 #article-card
 	display flex
