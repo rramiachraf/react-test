@@ -1,5 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik'
-import { object, string, required, email } from 'yup'
+import { object, string, required, email, min } from 'yup'
 import { useNavigate } from 'react-router-dom'
 import { useContext } from 'react'
 import { AuthContext } from '../contexts/auth'
@@ -13,7 +13,7 @@ export function Login() {
 
 	const schema = object({
 		email: string().email().required(),
-		password: string().required()
+		password: string().min(6).required()
 	})
 
 	const onSubmit = values => {
