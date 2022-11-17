@@ -32,13 +32,23 @@ export function Login() {
 				<Form id="login-form">
 					<h1>Login</h1>
 					<div className="section">
-						<label>email</label>
-						<Field name="email" type="text" placeholder="email@example.com" />
+						<label for="email">email</label>
+						<Field
+							id="email"
+							name="email"
+							type="text"
+							placeholder="email@example.com"
+						/>
 						<ErrorMessage name="email" render={Error} />
 					</div>
 					<div className="section">
-						<label>password</label>
-						<Field name="password" type="password" placeholder="password" />
+						<label for="password">password</label>
+						<Field
+							id="password"
+							name="password"
+							type="password"
+							placeholder="password"
+						/>
 						<ErrorMessage name="password" render={Error} />
 					</div>
 					<button className="bold" type="submit">
