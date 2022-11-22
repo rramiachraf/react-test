@@ -14,10 +14,13 @@
 	},
 	"devDependencies": {
 		"@parcel/transformer-stylus": "2.0.0-rc.0",
+		"eslint": "^8.28.0",
+		"eslint-plugin-react": "^7.31.11",
 		"parcel": "^2.0.0-rc.0"
 	},
 	"scripts": {
 		"start": "parcel src/index.html --no-cache --open --port 3000",
-		"build": "parcel build src/index.html"
+		"build": "parcel build src/index.html",
+		"lint": "eslint src/*"
 	}
 }
