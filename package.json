@@ -21,6 +21,6 @@
 	"scripts": {
 		"start": "parcel src/index.html --no-cache --open --port 3000",
 		"build": "parcel build src/index.html",
-		"lint": "eslint src/*"
+		"lint": "eslint src/*.js src/**/*.js"
 	}
 }
