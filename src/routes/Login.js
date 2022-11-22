@@ -32,7 +32,7 @@ export function Login() {
 				<Form id="login-form">
 					<h1>Login</h1>
 					<div className="section">
-						<label for="email">email</label>
+						<label htmlFor="email">email</label>
 						<Field
 							id="email"
 							name="email"
@@ -42,7 +42,7 @@ export function Login() {
 						<ErrorMessage name="email" render={Error} />
 					</div>
 					<div className="section">
-						<label for="password">password</label>
+						<label htmlFor="password">password</label>
 						<Field
 							id="password"
 							name="password"
