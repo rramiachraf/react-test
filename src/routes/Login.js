@@ -1,5 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik'
-import { object, string, required, email, min } from 'yup'
+import { object, string } from 'yup'
 import { useNavigate } from 'react-router-dom'
 import { useContext } from 'react'
 import { AuthContext } from '../contexts/auth'
